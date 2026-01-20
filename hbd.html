@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari terbaik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@300;500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">a
+</head>
+<body>
+    <div class="music-control" onclick="toggleMusic()">🎵</div>
+    <div id="overlay">
+    <div class="quiz-box">
+        <h2>Eitss, tunggu dulu yaa 🛑</h2>
+        <p>coba tebak sekarang tanggal berapa...🤭</p>
+        <p><b>sebelum dilanjut, kamu harus tebak dulu</b></p>
+        <input type="number" id="guessInput">
+        <button onclick="checkDate()">Tebakkk</button>
+        <p id="error-msg" style="color: red; display: none; font-size: 14px;">hayoo, tanggal berapa? coba lagi ya sayang😋</p>
+    </div>
+</div>
+<header>
+    <h1>Selamat Ulang Tahun yang ke-15, Sayangku!</h1>
+    <p>Semoga hari ini dan selamanya penuh dengan kebahagiaan dan cinta yang besar. aku sayang kamu banget! ❤️</p>
+</header>
+
+<section class="timeline-container">
+    <h2 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem;">Perjalanan Kita ❤️</h2>
+
+    <div class="month-section">
+        <span class="month-title">Juli - Awal Cerita 🌸</span>
+        <div class="photo-grid">
+            <div class="photo-item" style="--r: -2deg;"><img src="10.jpeg" alt="Juli 1"></div>
+            <div class="photo-item" style="--r: 3deg;"><img src="11.jpeg"Juli 2"></div>
+            <div class="photo-item" style="--r: -1deg;"><img src="12.jpeg" alt="Juli 3"></div>
+        </div>
+    </div>
+
+    <div class="month-section">
+        <span class="month-title">Agustus - Roblos</span>
+        <div class="photo-grid">
+            <div class="photo-item" style="--r: 2deg;"><img src="21.jpeg"></div>
+            <div class="photo-item" style="--r: -3deg;"><img src="22.jpeg"></div>
+            <div class="photo-item" style="--r: 1deg;"><img src="23.jpeg"></div>
+        </div>
+    </div>
+
+    <div class="month-section">
+        <span class="month-title">September - Kenangan 🍃</span>
+        <div class="photo-grid">
+            <div class="photo-item" style="--r: -2deg;"><img src="31.jpeg"></div>
+            <div class="photo-item" style="--r: 4deg;"><img src="32.jpeg"></div>
+            <div class="photo-item" style="--r: -1deg;"><img src="33.jpeg"></div>
+        </div>
+    </div>
+
+    <div class="month-section">
+        <span class="month-title">Oktober - 🌇</span>
+        <div class="photo-grid">
+            <div class="photo-item" style="--r: 3deg;"><img src="41.jpeg"></div>
+            <div class="photo-item" style="--r: -2deg;"><img src="42.jpeg"></div>
+            <div class="photo-item" style="--r: 2deg;"><img src="43.jpeg"></div>
+        </div>
+    </div>
+
+    <div class="month-section">
+        <span class="month-title">November - Selalu Ada ☕</span>
+        <div class="photo-grid">
+            <div class="photo-item" style="--r: -3deg;"><img src="51.jpeg"></div>
+            <div class="photo-item" style="--r: 1deg;"><img src="52.jpeg"></div>
+            <div class="photo-item" style="--r: -2deg;"><img src="53.jpeg"></div>
+        </div>
+    </div>
+
+    <div class="month-section">
+        <span class="month-title">Desember - Akhir Tahun ❄️</span>
+        <div class="photo-grid">
+            <div class="photo-item" style="--r: 2deg;"><img src="61.jpeg"></div>
+            <div class="photo-item" style="--r: -1deg;"><img src="62.jpeg"></div>
+            <div class="photo-item" style="--r: 3deg;"><img src="63.jpeg"></div>
+        </div>
+    </div>
+
+    <div class="month-section">
+        <span class="month-title">Januari - Usia Baru & Harapan 🎂</span>
+        <div class="photo-grid">
+            <div class="photo-item" style="--r: -2deg;"><img src="71.jpeg"></div>
+            <div class="photo-item" style="--r: 2deg;"><img src="72.jpeg"></div>
+            <div class="photo-item" style="--r: -3deg;"><img src="73.jpeg"></div>
+        </div>
+    </div>
+</section>
+    <section id="gallery-section">
+        <h2>Foto Foto kamu yang imutttt AING sukaa</h2>
+        <div class="gallery">
+            <img src="1.jpeg">
+            <img src="2.jpeg">
+            <img src="3.jpeg">
+            <img src="4.jpeg">
+            <img src="5.jpeg">
+            <img src="6.jpeg">
+            <img src="7.jpeg">
+            <img src="8.jpeg">
+        </div>
+        <p style="margin-top: 250px;">Sengaja aku buat foto fotonya numpuk gak beraturan, kayak ingatanku tentangmu yang selalu berjalan di kepala gak pernah beraturan.</p>
+    </section>
+
+    <section id="sempurna-section">
+        <div class="corner-decoration top-left">🌸</div>
+    <div class="corner-decoration bottom-right">🌸</div>
+        <h2>"Sempurna"</h2>
+        <div class="lyrics-container">
+            <p>
+                <span class="icon">🌹</span> kau adalah</br>
+                <span class="highlight">nafasku</span></br>
+                kau adalah</br>
+                <span class="highlight">detak jantungku</span></br>
+                kau adalah</br>
+                <span class="highlight">aliran darahku</span></br>
+                Yang takkan bisa kuhentikan
+            </p>
+            <p>
+                <span class="icon">🌟</span> kau adalah</br>
+                <span class="highlight">diriku</span></br>
+                kau adalah</br>
+                <span class="highlight">jiwaku</span></br>
+                kau adalah</br>
+                <span class="highlight">segala-galanya</span></br>
+                yang takkan bisa terganti
+            </p>
+            <p class="ending-note">
+                <span class="icon">💖</span> Karena bagiku, kamu adalah SEMPURNA
+            </p>
+        </div>
+        <div class="sempurna-image-wrapper">
+        <img src="amel.jpeg" alt="Ilustrasi Sempurna">
+        <span style="position:absolute; top:50%; left:-30px; font-size:20px;">💖</span>
+        <span style="position:absolute; top:20%; right:-30px; font-size:20px;">✨</span>
+        
+        <p style="font-style: italic; font-size: 0.9em; margin-top: 15px; font-family: 'Quicksand', sans-serif;">
+            "Setiap sudut wajahmu, setiap tawa manismu, adalah bukti bahwa keajaiban itu nyata."
+        </p>
+    </div>
+    </section>
+
+    <section id="spotify-section">
+        <h2>Playlist Spotify yang bisa buat mood kamu menjadi lebih baik dengan aing😛</h2>
+        <!-- Ganti dengan embed code Spotify playlist kamu. Dapatkan dari Spotify: Share > Embed Playlist -->
+        <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3VZeyZh3Gx8ttlTVMIWvEp?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <p>Dengerin lagu-lagu ini sambil inget momen momen indah yahiohofhwgpbnwpw.</p>
+    </section>
+
+    <section id="closing-message">
+    <div class="envelope-container">
+        <div class="heart-icon">💌</div>
+        <h2 class="typing-text" id="final-wish"></h2>
+        <p class="final-quote">
+            "Terima kasih sudah lahir ke dunia, dan terima kasih sudah mengizinkanku menjadi bagian dari duniamu. Selamat ulang tahun yang ke-15, Sayang."
+        </p>
+        <div class="signature">
+            <p>Selamanya milikmu,</p>
+            <p class="name">Sayangmu ❤️</p>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>Dibuat dengan cinta. 2026</p>
+    </footer>
+
+
+
+
+
+    <script>
+
+            function checkDate() {
+    const guess = document.getElementById('guessInput').value;
+    const correctDate = "21"; // GANTI dengan tanggal lahir aslinya
+    const song = document.getElementById('mySong');
+
+    if (guess === correctDate) {
+        // Memutar lagu tepat saat tombol ditekan
+        song.play().catch(error => {
+            console.log("Autoplay dicegah oleh browser, tapi klik ini biasanya memperbolehkannya.");
+        });
+
+        alert("YEEAYY BENAR! Sekarang bisa dibuka! ❤️");
+        document.getElementById('overlay').style.display = 'none'; 
+    } else {
+        document.getElementById('error-msg').style.display = 'block';
+        document.getElementById('guessInput').value = "";
+    }
+}
+
+
+function toggleMusic() {
+    const song = document.getElementById('mySong');
+    if (song.paused) {
+        song.play();
+    } else {
+        song.pause();
+    }
+}
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            
+            // Pilih simbol hati secara acak
+            const shapes = ['❤️', '💖', '💗', '💓', '✨', '🌹', '💕'];
+            heart.innerText = shapes[Math.floor(Math.random() * shapes.length)];
+            
+            // Posisi horizontal acak
+            heart.style.left = Math.random() * 100 + "vw";
+            
+            // Ukuran acak
+            heart.style.fontSize = Math.random() * 20 + 10 + "px";
+            
+            // Kecepatan jatuh acak (antara 3 - 7 detik)
+            const duration = Math.random() * 4 + 3;
+            heart.style.animationDuration = duration + "s";
+            
+            // Transparansi acak
+            heart.style.opacity = Math.random();
+
+            document.body.appendChild(heart);
+
+            // Hapus elemen hati setelah animasi selesai agar tidak memberatkan browser
+            setTimeout(() => {
+                heart.remove();
+            }, duration * 1000);
+        }
+
+        // Jalankan fungsi setiap 300 milidetik (0.3 detik)
+        setInterval(createHeart, 300);
+    </script>
+</body>
+<audio id="mySong" src="sempurna.mp3" loop></audio>
+</html>
